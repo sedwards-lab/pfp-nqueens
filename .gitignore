@@ -1,3 +1,5 @@
+nqueens.log
+nqueens.out
 dist
 dist-*
 cabal-dev
