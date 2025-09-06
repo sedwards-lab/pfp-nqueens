@@ -17,3 +17,8 @@ itself will print a list of targets.
 
 I developed this under Ubuntu Linux; it may also work under MacOS and
 Windows.
+
+The `ford/` `zaphod/` and `zaphod4/` directories contain experimental
+data collected on the machines mentioned in the report.  In each
+directory, `lscpu.txt` and `lsmem.txt` contain detailed information
+about each host's processor and memory.
