@@ -1,0 +1,960 @@
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.08 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.08 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.07 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.09 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.07 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.08 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.07 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.07 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.08 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N1 7.09 8064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.83 12288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.75 11904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.82 12288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.64 11904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.75 12288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.85 12288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.83 12288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.84 12288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.63 11904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N2 3.80 11904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.63 15744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.64 15360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.62 14976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.70 16128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.68 15744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.70 15360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.59 15744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.71 15360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.68 15744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N3 2.62 15744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.16 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.10 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.12 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.16 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.12 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.13 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.20 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.12 19968
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.14 19968
+365596
+./nqueens-threaded 14 pariset1 +RTS -N4 2.18 19584
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.71 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.68 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.65 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.78 23040
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.66 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.67 23808
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.70 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.67 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.68 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N5 1.68 23424
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.61 27648
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.62 27648
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.61 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.58 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.61 27648
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.67 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.63 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.62 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.65 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N6 1.62 27264
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.18 31488
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.24 31104
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.20 31488
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.16 31872
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.14 31872
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.24 31488
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.15 31488
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.20 31872
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.17 31872
+365596
+./nqueens-threaded 14 pariset1 +RTS -N7 1.17 31104
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.16 35712
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.32 35712
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.15 34944
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.17 36096
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.18 35328
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.18 35328
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.16 35328
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.16 36096
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.19 35328
+365596
+./nqueens-threaded 14 pariset1 +RTS -N8 1.17 35328
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.42 39552
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.15 39552
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.16 39936
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.18 39168
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.16 39168
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.14 38784
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.17 39552
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.14 39168
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.16 39168
+365596
+./nqueens-threaded 14 pariset1 +RTS -N9 1.15 39552
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.12 43776
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.15 43392
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.16 43776
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.15 43392
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.27 43392
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.35 43392
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.22 44160
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.14 43008
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.12 43392
+365596
+./nqueens-threaded 14 pariset1 +RTS -N10 1.17 43776
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.15 47616
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.12 47232
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.12 48384
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.09 47232
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.11 48384
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.13 46848
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.09 47232
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.17 48000
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.16 48384
+365596
+./nqueens-threaded 14 pariset1 +RTS -N11 1.20 46848
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.11 51072
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.10 51840
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.09 52224
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.10 51456
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.12 52224
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.09 51072
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.09 51456
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.10 51456
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.12 52224
+365596
+./nqueens-threaded 14 pariset1 +RTS -N12 1.11 51456
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.03 54912
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.06 54528
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.02 56064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.03 56448
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.01 55296
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.01 55296
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.00 55296
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.00 55680
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.00 55680
+365596
+./nqueens-threaded 14 pariset1 +RTS -N13 1.01 56064
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.79 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.66 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.70 58752
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.70 57984
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.72 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.79 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.77 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.63 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.68 59136
+365596
+./nqueens-threaded 14 pariset1 +RTS -N14 0.64 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.72 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.75 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.70 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.70 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.74 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.71 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.76 58752
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.67 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.83 59136
+365596
+./nqueens-threaded 14 pariset1 +RTS -N15 0.76 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.77 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.71 58752
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.71 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.73 58752
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.72 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.74 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.74 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.76 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.69 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N16 0.70 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.76 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.77 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.79 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.73 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.70 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.69 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.79 58752
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.67 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.73 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N17 0.67 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.73 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.69 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.70 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.75 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.72 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.69 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.71 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.72 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.70 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N18 0.77 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.78 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.73 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.71 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.72 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.73 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.72 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.68 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.74 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.84 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N19 0.82 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.81 58752
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.71 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.76 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.70 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.73 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.78 59136
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.73 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.71 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.81 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N20 0.75 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.72 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.76 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.72 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.70 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.71 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.72 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.75 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.74 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.87 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N21 0.80 59520
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.73 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.70 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.69 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.74 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.70 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.78 59136
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.71 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.79 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.73 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N22 0.74 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.80 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.76 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.71 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.72 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.76 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.76 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.73 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.72 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.74 60288
+365596
+./nqueens-threaded 14 pariset1 +RTS -N23 0.74 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.74 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.74 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.74 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.74 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.73 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.79 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.76 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.79 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.88 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N24 0.80 59904
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.77 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.80 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.74 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.76 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.79 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.78 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.76 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.74 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.77 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N25 0.72 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.77 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.74 65664
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.79 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.82 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.78 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.77 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.86 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.68 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.77 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N26 0.81 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.71 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.77 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.75 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.77 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.73 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.75 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.72 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.78 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.75 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N27 0.80 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.91 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.75 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.77 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.77 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.76 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.74 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.88 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.75 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.74 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N28 0.81 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.72 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.77 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.84 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.83 65280
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.74 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.76 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.73 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.77 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.74 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N29 0.82 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.82 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.75 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.83 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.93 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.75 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.74 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.78 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.77 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.90 65664
+365596
+./nqueens-threaded 14 pariset1 +RTS -N30 0.75 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.93 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.86 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.83 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.95 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.94 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.80 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.91 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.87 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.82 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N31 0.92 60672
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.89 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.89 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.87 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.80 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.85 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.89 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.82 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.88 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.87 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N32 0.74 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.87 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.81 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.81 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.81 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.81 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.78 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.83 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.78 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.81 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N33 0.85 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.82 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.84 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.84 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.81 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.83 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.82 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.88 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.84 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.80 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N34 0.84 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.78 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.89 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.83 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.76 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.86 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.88 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.85 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.82 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.84 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N35 0.90 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.88 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.90 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.83 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.86 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.84 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.86 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.82 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.88 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.75 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N36 0.83 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.82 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.81 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.89 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.85 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.83 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.78 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.84 61440
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.83 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.86 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N37 0.81 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.85 65280
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.80 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.83 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.90 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.84 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.83 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.88 61056
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.91 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.90 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N38 0.91 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.93 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.87 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.89 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.77 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.83 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.87 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.81 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.86 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.83 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N39 0.84 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.83 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.89 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.87 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.82 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.85 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.93 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.80 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.87 61824
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.87 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N40 0.82 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.79 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.81 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.79 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.86 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.79 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.83 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.81 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.77 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.84 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N41 0.82 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.79 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.78 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.85 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.83 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.84 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.85 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.82 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.80 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.85 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N42 0.82 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.81 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.80 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.85 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.87 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.83 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.84 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.82 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.86 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.87 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N43 0.89 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.83 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.81 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.80 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.84 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.88 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.85 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.83 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.80 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.80 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N44 0.82 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.91 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.83 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.82 64896
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.89 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.82 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.85 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.84 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.87 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.85 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N45 0.91 62592
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.90 62976
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.90 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.82 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.81 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.84 66048
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.87 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.81 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.92 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.77 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N46 0.92 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.89 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.90 65280
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.92 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.83 65280
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.91 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.85 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.87 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.85 64896
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.81 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N47 0.84 65280
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.94 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.95 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.95 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.96 64128
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.92 62208
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.89 63360
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.80 63744
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.80 64512
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.95 65664
+365596
+./nqueens-threaded 14 pariset1 +RTS -N48 0.81 63360

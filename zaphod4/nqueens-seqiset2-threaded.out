@@ -1,0 +1,14 @@
+92
+./nqueens-threaded 8 seqiset2 0.01 4724
+352
+./nqueens-threaded 9 seqiset2 0.01 5748
+724
+./nqueens-threaded 10 seqiset2 0.01 8436
+2680
+./nqueens-threaded 11 seqiset2 0.03 8436
+14200
+./nqueens-threaded 12 seqiset2 0.11 8436
+73712
+./nqueens-threaded 13 seqiset2 0.56 8436
+365596
+./nqueens-threaded 14 seqiset2 3.34 8564

@@ -1,0 +1,14 @@
+92
+./nqueens-O2 8 seqiset 0.01 4596
+352
+./nqueens-O2 9 seqiset 0.01 5748
+724
+./nqueens-O2 10 seqiset 0.01 8308
+2680
+./nqueens-O2 11 seqiset 0.03 8308
+14200
+./nqueens-O2 12 seqiset 0.14 8308
+73712
+./nqueens-O2 13 seqiset 0.75 8308
+365596
+./nqueens-O2 14 seqiset 4.53 8308

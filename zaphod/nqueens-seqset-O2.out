@@ -1,0 +1,6 @@
+14200
+./nqueens-O2 12 seqset 0.40 8140
+73712
+./nqueens-O2 13 seqset 2.30 8228
+365596
+./nqueens-O2 14 seqset 13.91 8616

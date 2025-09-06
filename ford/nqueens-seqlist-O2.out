@@ -1,0 +1,6 @@
+14200
+./nqueens-O2 12 seqlist 1.06 7680
+73712
+./nqueens-O2 13 seqlist 6.48 7680
+365596
+./nqueens-O2 14 seqlist 42.57 8064

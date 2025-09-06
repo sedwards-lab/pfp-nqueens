@@ -884,13 +884,13 @@ around 9\%.
   \toprule
 \texttt{-A4M} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-pariset2-14-N8.tex}
+\scriptsize\input{zaphod4/nqueens-pariset2-14-N8.stats.tex}
 \end{minipage}
 \\
 \midrule
 \texttt{-A64M} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-pariset2-14-N8-A64M.tex}
+\scriptsize\input{zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex}
 \end{minipage}
 \\
 \bottomrule
