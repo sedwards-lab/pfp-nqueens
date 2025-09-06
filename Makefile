@@ -1,6 +1,22 @@
-HOSTS = zaphod ford zaphod4
+default :
+	@echo "make report             Build nqueens.pdf from source and experimental logs"
+	@echo "make install-parallel   Install Control.Parallel using Stack"
+	@echo "make executables        Build executables for experiments"
+	@echo "make clean              Deletes report, executables, and generated results files, but not experimental logs" 
 
-RESULTFILES = \
+report : nqueens.pdf
+
+executables : nqueens-O0 nqueens-O2 nqueens-threaded
+
+# Generate the .pdf file from the LaTeX source and
+# processed experimental data
+#
+# This uses the LaTeX "chessboard" package,
+# which, on Ubuntu, can be installed by
+#
+#    apt install texlive-games
+
+PROCESSED_RESULTS = \
 	zaphod/nqueens-seqlist-O2.tex \
 	zaphod/nqueens-seqset-O2.tex \
 	zaphod/nqueens-pariset1-14.dat \
@@ -24,14 +40,13 @@ RESULTFILES = \
 	zaphod4/nqueens-seqiset-threaded.tex \
 	zaphod4/nqueens-seqiset2-threaded.tex \
 	zaphod4/nqueens-pariset2-14-N8.stats.tex \
-	zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex \
-	zaphod4/nqueens-pariset1-n6.png \
+	zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex
 
-nqueens.pdf : nqueens.lhs $(RESULTFILES)
+nqueens.pdf : nqueens.lhs $(PROCESSED_RESULTS) zaphod4/nqueens-pariset1-n6.png
 	pdflatex --halt-on-error nqueens.lhs
 
-# Generate the various result files used in the LaTeX source
-# from raw experimental data files (.out)
+# Transform raw experimental data files (.out and .rts)
+# into result files that will be included in the document
 
 %.tex : %.out table1.awk
 	awk -f table1.awk $< > $@
@@ -48,3 +63,29 @@ zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex : zaphod4/nqueens-pariset2-14-N8-A
 %.dat : %.out plot2.awk
 	awk -f plot2.awk $< > $@
 
+# Build executables for the experiments
+# Note: the Control.Parallel package needs to be installed
+# Run "make install-parallel" to do this
+
+RESOLVER = --resolver=lts-22.33
+
+install-parallel :
+	stack install $(RESOLVER) parallel
+
+nqueens-O0 : nqueens.lhs
+	stack ghc $(RESOLVER) -- -o nqueens-O0 -Wall nqueens.lhs
+
+nqueens-O2 : nqueens.lhs
+	stack ghc $(RESOLVER) -- -o nqueens-O2 -O2 -Wall nqueens.lhs
+
+nqueens-threaded : nqueens.lhs
+	stack ghc $(RESOLVER) -- -o nqueens-threaded -O2 -Wall -rtsopts -threaded nqueens.lhs
+
+
+# Remove all generated files
+
+.PHONY : clean
+
+clean :
+	rm -rf nqueens-O0 nqueens-O2 nqueens-threaded nqueens.pdf \
+	*.o *.hi *.log *.aux *.out $(PROCESSED_RESULTS)

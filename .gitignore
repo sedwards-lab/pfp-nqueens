@@ -1,5 +1,8 @@
 nqueens.log
 nqueens.out
+nqueens-O0
+nqueens-O2
+nqueens-threaded
 dist
 dist-*
 cabal-dev

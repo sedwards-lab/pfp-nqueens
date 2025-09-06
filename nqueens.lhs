@@ -5,17 +5,7 @@
 \usepackage{libertinus-type1}
 \usepackage{libertinust1math}
 
-\usepackage[scaled=0.85]{beramono} % scaled=0.85 basewidth=1.1ex
-
-% Other typewriter font options
-% https://tug.org/FontCatalogue/typewriterfonts.html
-
-%\usepackage{inconsolata}
-%\usepackage[scaled=0.85]{luximono}  % Serifs
-%\usepackage[defaultmono]{droidsansmono}  % No good bold?
-%\usepackage[scaled=0.80]{DejaVuSansMono}
-%\renewcommand*\ttdefault{txtt}
-%\usepackage[scaled=0.85]{newtxtt}  % scaled=0.85 basewidth=1.14ex
+\usepackage[scaled=0.85]{beramono}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -29,7 +19,6 @@
 \usepackage{pgfplots}
 \pgfplotsset{width=10cm,compat=1.9}
 
-
 % apt install texlive-games
 \usepackage{chessboard}
 \def\myrankformat{%
@@ -40,7 +29,6 @@
   \addtocounter{filelabel}{-1}\arabic{filelabel}%
   \addtocounter{filelabel}{1}
 }
-
 
 \usepackage{listings}
 \lstset{
@@ -949,8 +937,5 @@ main = do
     [nstr, mode] -> print $ nqueens mode (read nstr)
     _ -> die $ "Usage: nqueens n mode"
 \end{code}
-
-\bibliographystyle{plain}
-\bibliography{sedwards}
 
 \end{document}
