@@ -1,0 +1,141 @@
+#!/usr/bin/bash
+
+# Run nqueens experiments; capture logged results in a directory
+
+# Defaults
+dir=$(hostname)
+verbose=0
+mytime="/usr/bin/time -f \"%C %e %M\""
+
+Usage() {
+    echo "Usage: nqueens [options] [experiments]
+-d <dir>  The target directory/set of experiments; defaults to hostname
+-v        Be verbose
+-t <cmd>  Time command; defaults to /usr/bin/time -f \"%C %e %M\"
+-h        Print this help" >&2
+    exit 1
+}
+
+# Run a command, printing it in verbose mode
+execverbose() {
+    [ $verbose -ne 0 ] && echo "$*"
+    eval $*
+}
+
+# Write stdout/stderr to the file; echo if in verbose mode
+verbtee() {
+    if [ $verbose -ne 0 ]
+    then
+	tee $1
+    else
+	cat > $1
+    fi
+}
+
+while getopts "d:vt:h" opt
+do
+    case $opt in
+	d)
+	    dir="$OPTARG"
+	    ;;
+	v)
+	    verbose=1
+	    ;;
+	t)
+	    mytime="$OPTARG"
+	    ;;
+	h|\?)
+	    Usage
+	    ;;	    
+    esac
+done
+
+# Consume the optional arguments
+shift $((OPTIND - 1))
+
+if [ $# -ne 0 ]
+then
+    # A list of experiments was given on the command line
+    
+    experiments=$@
+else
+    # Set the default experiments for a directory (usually the hostname)
+    
+    case "$dir" in
+	foo)
+	    experiments="seqlist-O0 seqlist-O2 seqset-O2 pariset1-14"
+	    ;;	    
+	*)
+	    echo "No experiments to run for \"$dir\"; list them on command line or modify this script"
+	    exit 1
+    esac
+fi
+
+
+# The experiments: each is a procedure that will be invoked and its
+# stdout and stderr captured and/or printed into a file determined by
+# the directory name and experiment name
+
+seqlist-O0() {
+    for n in $(seq 8 12)
+    do
+	eval $mytime ./nqueens-O0 $n seqlist
+    done
+}
+
+seqlist-O2() {
+    for n in $(seq 8 12)
+    do
+	eval $mytime ./nqueens-O2 $n seqlist
+    done
+}
+
+seqset-O2() {
+    for n in $(seq 8 12)
+    do
+	eval $mytime ./nqueens-O2 $n seqset
+    done
+}
+
+pariset1-14() {
+    mincores=1
+    maxcores=$(nproc)
+    numruns=10
+    for cores in $(seq $mincores $maxcores)
+    do
+	for k in $(seq 1 $numruns)
+	do
+	    eval $mytime ./nqueens-threaded 12 pariset1 +RTS -N$cores
+	done
+    done
+}
+
+
+
+
+# Create the directory if it doesn't exist
+[ -d "$dir" ] || execverbose mkdir "$dir"
+
+# Run lscpu and lsmem if the .txt files don't exist in the directory
+[ -f "$dir/lscpu.txt" ] || (execverbose lscpu ">" "$dir/lscpu.txt")
+[ -f "$dir/lsmem.txt" ] || (execverbose lsmem ">" "$dir/lsmem.txt")
+
+# Verify the executables are present
+for exec in ./nqueens-O0 ./nqueens-O2 ./nqueens-threaded
+do
+    if [ ! -x $exec ]
+    then
+	echo "Did not find executable \"$exec\"; did you run \"make executables\"?" >&2
+	exit 1
+    fi
+done
+
+# Run the requested experiments
+
+[ $verbose -ne 0 ] && echo "Running experiments $experiments"
+
+for experiment in $experiments
+do
+    [ $verbose -ne 0 ] && echo "Running $experiment"
+    $experiment 2>&1 | verbtee $dir/$experiment.out
+done
