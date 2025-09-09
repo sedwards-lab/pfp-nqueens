@@ -5,12 +5,14 @@
 # Defaults
 dir=$(hostname)
 verbose=0
+onlyprint=0
 mytime="/usr/bin/time -f \"%C %e %M\""
 
 Usage() {
     echo "Usage: nqueens [options] [experiments]
 -d <dir>  The target directory/set of experiments; defaults to hostname
 -v        Be verbose
+-p        Just print the list of experiments to performed, don't run them
 -t <cmd>  Time command; defaults to /usr/bin/time -f \"%C %e %M\"
 -h        Print this help" >&2
     exit 1
@@ -32,7 +34,7 @@ verbtee() {
     fi
 }
 
-while getopts "d:vt:h" opt
+while getopts "d:vpt:h" opt
 do
     case $opt in
 	d)
@@ -40,6 +42,9 @@ do
 	    ;;
 	v)
 	    verbose=1
+	    ;;
+	p)
+	    onlyprint=1
 	    ;;
 	t)
 	    mytime="$OPTARG"
@@ -59,43 +64,85 @@ then
     
     experiments=$@
 else
-    # Set the default experiments for a directory (usually the hostname)
+    # Experiment sets by directory (usually hostname)
     
     case "$dir" in
-	foo)
-	    experiments="seqlist-O0 seqlist-O2 seqset-O2 pariset1-14"
-	    ;;	    
+		
+	zaphod4)
+	    experiments="seqlist-O0 seqlist-O2 seqset-O2 seqiset-O2 seqiset-threaded pariset1-14"
+	    ;;
+
+	zaphod)
+	    experiments="seqlist-O2-12-14 seqset-O2-12-14"
+	    ;;
+
+	ford)
+	    experiments="seqlist-O2-12-14 seqset-O2-12-14"
+	    ;;
+
 	*)
 	    echo "No experiments to run for \"$dir\"; list them on command line or modify this script"
 	    exit 1
     esac
 fi
 
-
+######################################################################
+#
 # The experiments: each is a procedure that will be invoked and its
 # stdout and stderr captured and/or printed into a file determined by
 # the directory name and experiment name
+#
 
 seqlist-O0() {
-    for n in $(seq 8 12)
+    for n in $(seq 8 14)
     do
 	eval $mytime ./nqueens-O0 $n seqlist
     done
 }
 
 seqlist-O2() {
-    for n in $(seq 8 12)
+    for n in $(seq 8 14)
+    do
+	eval $mytime ./nqueens-O2 $n seqlist
+    done
+}
+
+seqlist-O2-12-14() {
+    for n in $(seq 12 14)
     do
 	eval $mytime ./nqueens-O2 $n seqlist
     done
 }
 
 seqset-O2() {
-    for n in $(seq 8 12)
+    for n in $(seq 8 14)
     do
 	eval $mytime ./nqueens-O2 $n seqset
     done
 }
+
+seqset-O2-12-14() {
+    for n in $(seq 12 14)
+    do
+	eval $mytime ./nqueens-O2 $n seqset
+    done
+}
+
+
+seqiset-O2() {
+    for n in $(seq 8 14)
+    do
+	eval $mytime ./nqueens-O2 $n seqiset
+    done
+}
+
+seqiset-threaded() {
+    for n in $(seq 8 14)
+    do
+	eval $mytime ./nqueens-threaded $n seqiset +RTS -N1
+    done
+}
+
 
 pariset1-14() {
     mincores=1
@@ -112,6 +159,17 @@ pariset1-14() {
 
 
 
+######################################################################
+#
+# Set up the result directory and run the experiments
+#
+
+# If requested, print the experiment list and quit
+if [ $onlyprint -ne 0 ]
+then
+    echo $experiments
+    exit 0
+fi
 
 # Create the directory if it doesn't exist
 [ -d "$dir" ] || execverbose mkdir "$dir"

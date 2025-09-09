@@ -17,23 +17,27 @@ executables : nqueens-O0 nqueens-O2 nqueens-threaded
 #    apt install texlive-games
 
 PROCESSED_RESULTS = \
-	zaphod/nqueens-seqlist-O2.tex \
-	zaphod/nqueens-seqset-O2.tex \
+	zaphod4/seqlist-O0.tex \
+\
+	zaphod4/seqlist-O2.tex \
+	zaphod/seqlist-O2-12-14.tex \
+	ford/seqlist-O2-12-14.tex \
+\
+	zaphod4/seqset-O2.tex \
+	zaphod/seqset-O2-12-14.tex \
+	ford/seqset-O2-12-14.tex \
+\
+	zaphod4/seqiset-O2.tex \
+	zaphod4/seqiset-threaded.tex \
+\
 	zaphod/nqueens-pariset1-14.dat \
 	zaphod/nqueens-pariset2-14.dat \
 \
-	ford/nqueens-seqlist-O2.tex \
-	ford/nqueens-seqset-O2.tex \
 	ford/nqueens-pariset1-14.dat \
 	ford/nqueens-pariset2-14.dat \
 \
-	zaphod4/nqueens-seqlist-O0.tex \
-	zaphod4/nqueens-seqlist-O2.tex \
-	zaphod4/nqueens-seqset-O2.tex \
 	zaphod4/nqueens-pariset1-14.dat \
 	zaphod4/nqueens-pariset2-14.dat \
-	zaphod4/nqueens-seqiset-O2.tex \
-	zaphod4/nqueens-seqiset-threaded.tex \
 	zaphod4/nqueens-seqlist-threaded.stats.tex \
 	zaphod4/nqueens-seqset-threaded.stats.tex \
 	zaphod4/nqueens-seqiset-threaded.stats.tex \

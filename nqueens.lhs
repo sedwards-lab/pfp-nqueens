@@ -171,8 +171,8 @@ an older desktop, the '9700, a newer desktop, and the '4214, a server.
   L2 cache & $256\text{K} \times 4$ & $256\text{K} \times 8$ & $1\text{M} \times 24$ \\
   L3 cache & 10M & 12M & $16.5\text{M} \times 2$ \\
   Memory & 64G & 64G & 152G \\
-  Speed (GT/s) & 1.6 & 2.1 & 2.1 \\
-  Channels$^\ddagger$ & 4 & 2 & 8 \\
+  Memory Speed (GT/s) & 1.6 & 2.1 & 2.1 \\
+  Memory Channels$^\ddagger$ & 4 & 2 & 8 \\
   \bottomrule
 \end{tabular}
 
@@ -203,7 +203,7 @@ memory, compared to~128~GB on the '3820 and '9700.
 
 \newpage
 
-\section{Sequential with lists}
+\section{Sequential with Lists}
 
 Our first sequential implementation of the backtracking algorithm will
 use simple lists for both the row of each queen as well as the sets of
@@ -228,7 +228,7 @@ nqueens "seqlist" n = sum $ map (helper [] [] []) [0..n-1]
 
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
-\input{zaphod4/nqueens-seqlist-O0}
+\input{zaphod4/seqlist-O0}
 
 '9700, lists, No optimization
 
@@ -249,19 +249,19 @@ The '9700 platform is the fastest; the other two are roughly 50\% slower.
 
 \end{minipage}\hfill%
 \begin{minipage}[t]{0.48\textwidth}
-\input{zaphod4/nqueens-seqlist-O2}
+\input{zaphod4/seqlist-O2}
 
 '9700, lists, \texttt{-O2}
 
 \medskip
 
-\input{zaphod/nqueens-seqlist-O2}
+\input{zaphod/seqlist-O2-12-14}
 
 '3820, lists,  \texttt{-O2}
 
 \medskip
 
-\input{ford/nqueens-seqlist-O2}
+\input{ford/seqlist-O2-12-14}
 
 '4214, lists,  \texttt{-O2}
 
@@ -293,37 +293,37 @@ nqueens "seqset" n = sum $ map (helper Set.empty Set.empty Set.empty) [0..n-1]
 
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
-  \input{zaphod4/nqueens-seqlist-O2}
+  \input{zaphod4/seqlist-O2}
   
   '9700, lists, \texttt{-O2}
 
   \medskip
 
-  \input{zaphod/nqueens-seqlist-O2}
+  \input{zaphod/seqlist-O2-12-14}
 
   '3820, lists,  \texttt{-O2}
 
   \medskip
   
-  \input{ford/nqueens-seqlist-O2}
+  \input{ford/seqlist-O2-12-14}
 
   '4214, lists,  \texttt{-O2}
 
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
-  \input{zaphod4/nqueens-seqset-O2}
+  \input{zaphod4/seqset-O2}
 
   '9700, \texttt{Set}, \texttt{-O2}
 
   \medskip
 
-  \input{zaphod/nqueens-seqset-O2}
+  \input{zaphod/seqset-O2-12-14}
 
   '3820, \texttt{Set},  \texttt{-O2}
 
   \medskip
   
-  \input{ford/nqueens-seqset-O2}
+  \input{ford/seqset-O2-12-14}
   
   '4214, \texttt{Set},  \texttt{-O2}
 
@@ -365,12 +365,12 @@ nqueens "seqiset" n = sum $ map (helper IS.empty IS.empty IS.empty) [0..n-1]
 
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
-\input{zaphod4/nqueens-seqset-O2}
+\input{zaphod4/seqset-O2}
 
 '9700, \texttt{Set}, \texttt{-O2}
 \end{minipage}\hfill%
 \begin{minipage}[t]{0.48\textwidth}
-\input{zaphod4/nqueens-seqiset-O2}
+\input{zaphod4/seqiset-O2}
 
 '9700, \texttt{IntSet}, \texttt{-O2}
 \end{minipage}
@@ -388,12 +388,12 @@ with \texttt{-threaded}) does not affect the runtimes.
 
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
-\input{zaphod4/nqueens-seqiset-O2}
+\input{zaphod4/seqiset-O2}
 
 '9700, \texttt{IntSet}, \texttt{-O2}
 \end{minipage}\hfill%
 \begin{minipage}[t]{0.48\textwidth}
-\input{zaphod4/nqueens-seqiset-threaded}
+\input{zaphod4/seqiset-threaded}
 
 '9700, \texttt{IntSet}, \texttt{-N1}, \texttt{-O2} \texttt{-threaded} \texttt{-rtsopts}
 \end{minipage}

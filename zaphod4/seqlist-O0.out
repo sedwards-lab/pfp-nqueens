@@ -1,0 +1,14 @@
+92
+./nqueens-O0 8 seqlist 0.08 8192
+352
+./nqueens-O0 9 seqlist 0.02 8164
+724
+./nqueens-O0 10 seqlist 0.05 8164
+2680
+./nqueens-O0 11 seqlist 0.22 8064
+14200
+./nqueens-O0 12 seqlist 1.21 8320
+73712
+./nqueens-O0 13 seqlist 7.39 8932
+365596
+./nqueens-O0 14 seqlist 47.50 9856
