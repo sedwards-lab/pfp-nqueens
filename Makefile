@@ -30,6 +30,10 @@ PROCESSED_RESULTS = \
 	zaphod4/seqiset-O2.tex \
 	zaphod4/seqiset-threaded.tex \
 \
+	zaphod4/seqlist-threaded.stats.tex \
+	zaphod4/seqset-threaded.stats.tex \
+	zaphod4/seqiset-threaded.stats.tex \
+\
 	zaphod/nqueens-pariset1-14.dat \
 	zaphod/nqueens-pariset2-14.dat \
 \
@@ -38,9 +42,6 @@ PROCESSED_RESULTS = \
 \
 	zaphod4/nqueens-pariset1-14.dat \
 	zaphod4/nqueens-pariset2-14.dat \
-	zaphod4/nqueens-seqlist-threaded.stats.tex \
-	zaphod4/nqueens-seqset-threaded.stats.tex \
-	zaphod4/nqueens-seqiset-threaded.stats.tex \
 	zaphod4/nqueens-seqiset-threaded.tex \
 	zaphod4/nqueens-seqiset2-threaded.tex \
 	zaphod4/nqueens-pariset2-14-N8.stats.tex \
@@ -60,6 +61,9 @@ zaphod4/nqueens-pariset2-14-N8.stats.tex : zaphod4/nqueens-pariset2-14-N8.rts rt
 
 zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex : zaphod4/nqueens-pariset2-14-N8-A64M.rts rts-s2.awk
 	awk -f rts-s2.awk $< > $@
+
+%.stats.tex : %.stats.out rts-s.awk
+	awk -f rts-s.awk $< > $@
 
 %.stats.tex : %.rts rts-s.awk
 	awk -f rts-s.awk $< > $@

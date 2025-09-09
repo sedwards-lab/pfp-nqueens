@@ -69,7 +69,12 @@ else
     case "$dir" in
 		
 	zaphod4)
-	    experiments="seqlist-O0 seqlist-O2 seqset-O2 seqiset-O2 seqiset-threaded pariset1-14"
+	    experiments="seqlist-O0 seqlist-O2 seqset-O2 \
+	    		 seqiset-O2 seqiset-threaded \
+			 seqlist-threaded.stats \
+			 seqset-threaded.stats \
+			 seqiset-threaded.stats \
+			 pariset1-14"
 	    ;;
 
 	zaphod)
@@ -142,6 +147,19 @@ seqiset-threaded() {
 	eval $mytime ./nqueens-threaded $n seqiset +RTS -N1
     done
 }
+
+seqlist-threaded.stats() {
+    ./nqueens-threaded 13 seqlist +RTS -N1 -s
+}
+
+seqset-threaded.stats() {
+    ./nqueens-threaded 13 seqset +RTS -N1 -s
+}
+
+seqiset-threaded.stats() {
+    ./nqueens-threaded 13 seqiset +RTS -N1 -s
+}
+
 
 
 pariset1-14() {

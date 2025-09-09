@@ -408,19 +408,19 @@ with \texttt{-threaded}) does not affect the runtimes.
   \toprule
 \textbf{list} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-seqlist-threaded.stats}
+\scriptsize\input{zaphod4/seqlist-threaded.stats}
 \end{minipage}
 \\
 \midrule
 \textbf{Set} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-seqset-threaded.stats}  
+\scriptsize\input{zaphod4/seqset-threaded.stats}  
 \end{minipage}
 \\
 \midrule
 \textbf{IntSet} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-seqiset-threaded.stats}  
+\scriptsize\input{zaphod4/seqiset-threaded.stats}  
 \end{minipage}
 \\
 \bottomrule

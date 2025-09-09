@@ -1,5 +1,5 @@
-'./nqueens-threaded' '13' 'seqiset' +RTS '-N1' '-szaphod4/nqueens-seqiset-threaded.rts' 
-     945,127,512 bytes allocated in the heap
+73712
+     945,126,960 bytes allocated in the heap
          314,640 bytes copied during GC
           72,808 bytes maximum residency (2 sample(s))
           30,152 bytes maximum slop
@@ -14,12 +14,12 @@
   SPARKS: 0 (0 converted, 0 overflowed, 0 dud, 0 GC'd, 0 fizzled)
 
   INIT    time    0.000s  (  0.000s elapsed)
-  MUT     time    0.760s  (  0.760s elapsed)
+  MUT     time    0.764s  (  0.768s elapsed)
   GC      time    0.001s  (  0.001s elapsed)
-  EXIT    time    0.000s  (  0.009s elapsed)
-  Total   time    0.762s  (  0.770s elapsed)
+  EXIT    time    0.000s  (  0.001s elapsed)
+  Total   time    0.765s  (  0.770s elapsed)
 
-  Alloc rate    1,243,275,249 bytes per MUT second
+  Alloc rate    1,237,164,940 bytes per MUT second
 
-  Productivity  99.8% of total user, 98.6% of total elapsed
+  Productivity  99.8% of total user, 99.8% of total elapsed
 
