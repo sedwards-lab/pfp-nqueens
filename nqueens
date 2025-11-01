@@ -74,16 +74,17 @@ else
 			 seqlist-threaded.stats \
 			 seqset-threaded.stats \
 			 seqiset-threaded.stats \
-			 pariset1-14"
+			 pariset1-14 pariset2-14"
 	    ;;
 
 	zaphod)
 	    experiments="seqlist-O2-12-14 seqset-O2-12-14 \
-	    pariset1-14 pariset2-14"
+	    		 pariset1-14 pariset2-14"
 	    ;;
 
 	ford)
-	    experiments="seqlist-O2-12-14 seqset-O2-12-14"
+	    experiments="seqlist-O2-12-14 seqset-O2-12-14 \
+	                 pariset1-14 pariset2-14"
 	    ;;
 
 	*)
