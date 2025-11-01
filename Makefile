@@ -6,7 +6,7 @@ default :
 
 report : nqueens.pdf
 
-executables : nqueens-O0 nqueens-O2 nqueens-threaded
+executables : install-parallel nqueens-O0 nqueens-O2 nqueens-threaded
 
 # Generate the .pdf file from the LaTeX source and
 # processed experimental data
@@ -16,6 +16,8 @@ executables : nqueens-O0 nqueens-O2 nqueens-threaded
 #
 #    apt install texlive-games
 
+# These files are generated from the logs produced by running the
+# experiments (see the nqueens script)
 PROCESSED_RESULTS = \
 	zaphod4/seqlist-O0.tex \
 \
@@ -34,14 +36,14 @@ PROCESSED_RESULTS = \
 	zaphod4/seqset-threaded.stats.tex \
 	zaphod4/seqiset-threaded.stats.tex \
 \
-	zaphod/nqueens-pariset1-14.dat \
-	zaphod/nqueens-pariset2-14.dat \
+	zaphod4/pariset1-14.dat \
+	zaphod/pariset1-14.dat \
+	ford/pariset1-14.dat \
 \
-	ford/nqueens-pariset1-14.dat \
-	ford/nqueens-pariset2-14.dat \
+	zaphod4/pariset2-14.dat \
+	zaphod/pariset2-14.dat \
+	ford/pariset2-14.dat \
 \
-	zaphod4/nqueens-pariset1-14.dat \
-	zaphod4/nqueens-pariset2-14.dat \
 	zaphod4/nqueens-seqiset-threaded.tex \
 	zaphod4/nqueens-seqiset2-threaded.tex \
 	zaphod4/nqueens-pariset2-14-N8.stats.tex \

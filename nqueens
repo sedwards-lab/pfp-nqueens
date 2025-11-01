@@ -78,7 +78,8 @@ else
 	    ;;
 
 	zaphod)
-	    experiments="seqlist-O2-12-14 seqset-O2-12-14"
+	    experiments="seqlist-O2-12-14 seqset-O2-12-14 \
+	    pariset1-14 pariset2-14"
 	    ;;
 
 	ford)
@@ -160,19 +161,23 @@ seqiset-threaded.stats() {
     ./nqueens-threaded 13 seqiset +RTS -N1 -s
 }
 
-
-
-pariset1-14() {
-    mincores=1
-    maxcores=$(nproc)
-    numruns=10
-    for cores in $(seq $mincores $maxcores)
+# run-n-cores <n> <mode> <min-cores> <max-cores> <runs>
+run-n-cores() {
+    for cores in $(seq $3 $4)
     do
-	for k in $(seq 1 $numruns)
+	for k in $(seq 1 $5)
 	do
-	    eval $mytime ./nqueens-threaded 12 pariset1 +RTS -N$cores
+	    eval $mytime ./nqueens-threaded $1 $2 +RTS -N$cores
 	done
     done
+}
+
+pariset1-14() {
+    run-n-cores 14 pariset1 1 $(nproc) 10
+}
+
+pariset2-14() {
+    run-n-cores 14 pariset2 1 $(nproc) 10
 }
 
 

@@ -493,7 +493,7 @@ nqueens "pariset1" n = sum (firstcol `using` parList rseq)
       grid=major,
       clip=false
     ]
-    \addplot [only marks,mark=x] table {zaphod4/nqueens-pariset1-14.dat};
+    \addplot [only marks,mark=x] table {zaphod4/pariset1-14.dat};
     \addplot[
       red,
       domain=1:8,
@@ -559,7 +559,7 @@ decreased substantially.
       grid=major,
       clip=false
     ]
-    \addplot [only marks,mark=x] table {zaphod/nqueens-pariset1-14.dat};
+    \addplot [only marks,mark=x] table {zaphod/pariset1-14.dat};
     \addplot[
       red,
       domain=1:4,
@@ -607,7 +607,7 @@ But the results on the '4214 showed even more anomalies:
       grid=major,
       clip=false
       ]
-    \addplot [only marks,mark=x] table {ford/nqueens-pariset1-14.dat};
+    \addplot [only marks,mark=x] table {ford/pariset1-14.dat};
     \addplot[
       red,
       domain=1:14,
@@ -733,7 +733,7 @@ nqueens "pariset2" n = count (0 :: Int) (IS.empty, IS.empty, IS.empty)
       grid=major,
       clip=false
     ]
-    \addplot [only marks,mark=x] table {zaphod4/nqueens-pariset2-14.dat};
+    \addplot [only marks,mark=x] table {zaphod4/pariset2-14.dat};
     \addplot[
       red,
       domain=1:8,
@@ -785,7 +785,7 @@ converted; the rest fizzled.
       grid=major,
       clip=false
     ]
-    \addplot [only marks,mark=x] table {zaphod/nqueens-pariset2-14.dat};
+    \addplot [only marks,mark=x] table {zaphod/pariset2-14.dat};
     \addplot[
       red,
       domain=1:4,
@@ -832,7 +832,7 @@ converted; the rest fizzled.
       grid=major,
       clip=false
       ]
-    \addplot [only marks,mark=x] table {ford/nqueens-pariset2-14.dat};
+    \addplot [only marks,mark=x] table {ford/pariset2-14.dat};
     \addplot[
       red,
       domain=1:16,
