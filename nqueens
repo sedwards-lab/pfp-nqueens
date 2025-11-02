@@ -69,12 +69,18 @@ else
     case "$dir" in
 		
 	zaphod4)
-	    experiments="seqlist-O0 seqlist-O2 seqset-O2 \
-	    		 seqiset-O2 seqiset-threaded \
+	    experiments="seqlist-O0 seqlist-O2 \
+	      	         seqset-O2 \
+	    		 seqiset-O2 \
+			 seqiset-threaded \
+			 seqiset2-threaded \
 			 seqlist-threaded.stats \
 			 seqset-threaded.stats \
 			 seqiset-threaded.stats \
-			 pariset1-14 pariset2-14"
+			 pariset1-14 \
+			 pariset2-14 \
+			 pariset2-14-A4M.stats \
+ 			 pariset2-14-A64M.stats"
 	    ;;
 
 	zaphod)
@@ -150,6 +156,13 @@ seqiset-threaded() {
     done
 }
 
+seqiset2-threaded() {
+    for n in $(seq 8 14)
+    do
+	eval $mytime ./nqueens-threaded $n seqiset2 +RTS -N1
+    done
+}
+
 seqlist-threaded.stats() {
     ./nqueens-threaded 13 seqlist +RTS -N1 -s
 }
@@ -179,6 +192,14 @@ pariset1-14() {
 
 pariset2-14() {
     run-n-cores 14 pariset2 1 $(nproc) 10
+}
+
+pariset2-14-A4M.stats() {
+    ./nqueens-threaded 14 pariset2 +RTS -N8 -A4M -s
+}
+
+pariset2-14-A64M.stats() {
+    ./nqueens-threaded 14 pariset2 +RTS -N8 -A64M -s
 }
 
 

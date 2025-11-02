@@ -31,6 +31,7 @@ PROCESSED_RESULTS = \
 \
 	zaphod4/seqiset-O2.tex \
 	zaphod4/seqiset-threaded.tex \
+	zaphod4/seqiset2-threaded.tex \
 \
 	zaphod4/seqlist-threaded.stats.tex \
 	zaphod4/seqset-threaded.stats.tex \
@@ -44,12 +45,10 @@ PROCESSED_RESULTS = \
 	zaphod/pariset2-14.dat \
 	ford/pariset2-14.dat \
 \
-	zaphod4/nqueens-seqiset-threaded.tex \
-	zaphod4/nqueens-seqiset2-threaded.tex \
-	zaphod4/nqueens-pariset2-14-N8.stats.tex \
-	zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex
+	zaphod4/pariset2-14-A4M.stats.tex \
+	zaphod4/pariset2-14-A64M.stats.tex
 
-nqueens.pdf : nqueens.lhs $(PROCESSED_RESULTS) zaphod4/nqueens-pariset1-n6.png
+nqueens.pdf : nqueens.lhs $(PROCESSED_RESULTS) zaphod4/pariset1-n6.png
 	pdflatex --halt-on-error nqueens.lhs
 
 # Transform raw experimental data files (.out and .rts)
@@ -58,10 +57,10 @@ nqueens.pdf : nqueens.lhs $(PROCESSED_RESULTS) zaphod4/nqueens-pariset1-n6.png
 %.tex : %.out table1.awk
 	awk -f table1.awk $< > $@
 
-zaphod4/nqueens-pariset2-14-N8.stats.tex : zaphod4/nqueens-pariset2-14-N8.rts rts-s2.awk
+zaphod4/pariset2-14-A4M.stats.tex : zaphod4/pariset2-14-A4M.stats.out rts-s2.awk
 	awk -f rts-s2.awk $< > $@
 
-zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex : zaphod4/nqueens-pariset2-14-N8-A64M.rts rts-s2.awk
+zaphod4/pariset2-14-A64M.stats.tex : zaphod4/pariset2-14-A64M.stats.out rts-s2.awk
 	awk -f rts-s2.awk $< > $@
 
 %.stats.tex : %.stats.out rts-s.awk

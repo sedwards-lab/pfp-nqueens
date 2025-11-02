@@ -512,7 +512,7 @@ nqueens "pariset1" n = sum (firstcol `using` parList rseq)
 '9700, $14 \times 14$, \texttt{IntSet}
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
-  \includegraphics[width=\textwidth]{zaphod4/nqueens-pariset1-n6.png}
+  \includegraphics[width=\textwidth]{zaphod4/pariset1-n6.png}
 
 '9700, $14 \times 14$, \texttt{IntSet}, \texttt{-N6}
 \end{minipage}
@@ -671,14 +671,14 @@ nqueens "seqiset2" n = count (IS.empty, IS.empty, IS.empty)
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
 \begin{center}
-  \input{zaphod4/nqueens-seqiset-threaded}
+  \input{zaphod4/seqiset-threaded}
 
 '9700, \texttt{14 seqiset}, \texttt{-N1}
 \end{center}
 \end{minipage}\hfill%
 \begin{minipage}[t]{0.48\textwidth}
 \begin{center}
-\input{zaphod4/nqueens-seqiset2-threaded}
+\input{zaphod4/seqiset2-threaded}
 
 '9700, \texttt{14 seqiset2}, \texttt{-N1}
 \end{center}
@@ -872,13 +872,13 @@ around 9\%.
   \toprule
 \texttt{-A4M} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-pariset2-14-N8.stats.tex}
+\scriptsize\input{zaphod4/pariset2-14-A4M.stats.tex}
 \end{minipage}
 \\
 \midrule
 \texttt{-A64M} &
 \begin{minipage}{0.7\textwidth}
-\scriptsize\input{zaphod4/nqueens-pariset2-14-N8-A64M.stats.tex}
+\scriptsize\input{zaphod4/pariset2-14-A64M.stats.tex}
 \end{minipage}
 \\
 \bottomrule
