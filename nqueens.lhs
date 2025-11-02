@@ -52,13 +52,33 @@
 
 \maketitle
 
+\noindent
+
+This is intended as a reference project for Columbia's \emph{Parallel
+Functional Programming} class,%
+\footnote{\url{https://www.cs.columbia.edu/~sedwards/classes/2025/4995-fall/}}
+which uses Haskell's
+\href{https://hackage.haskell.org/package/parallel/docs/Control-Parallel-Strategies.html}%
+{parallel evaluation strategies}, which are described in Marlow's
+book.\footnote{Simon Marlow.  \emph{Parallel and Concurrent
+Programming in Haskell}.  O'Reilly, 2013.\\
+\url{https://simonmar.github.io/pages/pcph.html}} Key elements of this
+project include the choice of a simple, well-known algorithm whose
+computational load is easily tuned and not \textsc{i/o}-limited; the
+description of iterative improvements to the implementation (na\"ive
+sequential, improved sequential data structures, na\"ive parallelism,
+and better parallelism)) driven by experimental performance data,
+estimating the effects of Amdahl's law,\footnote{Gene M. Amdahl. Validity of the single processor approach to achieving large scale computing capabilities. In Proc. Spring Joint Computer Conference (AFIPS), 1967. pp. 483–485. \url{https://doi.org/10.1145/1465482.1465560}}
+
+\section{N-Queens}
+
 Our goal will be to calculate the number of solutions for a board of a
 particular size.  We'll adopt a backtracking depth-first search
 algorithm due to Niklaus Wirth\footnote{Niklaus Wirth. \emph{Algorithms + Data Structures = Programs}. Prentice Hall, 1976. Section 3.5} that
 adds one queen per column in any row that isn't already occupied and
 not under diagonal threat from an existing queen.
 
-This eliminates I/O bottlenecks since the input and output of the
+This eliminates \textsc{i/o} bottlenecks since the input and output of the
 algorithm is each a small integer.
 
 \noindent
@@ -126,8 +146,7 @@ import Control.Parallel.Strategies(using, parList, rseq)
 \section{Platforms}
 
 I ran my implementation on three different computers with Intel
-\textsc{cpu}s to test its platform sensitivity.  These are the '3820,
-an older desktop, the '9700, a newer desktop, and the '4214, a server.
+\textsc{cpu}s to test its platform sensitivity.  These are the '3820 desktop from 2012, the '9700 desktop from 2019, and '4214 server, also from 2019.
 
 % https://www.cpu-world.com/CPUs/Core_i7/Intel-Core%20i7-3820.html
 % https://www.cpu-world.com/CPUs/Core_i7/Intel-Core%20i7%20i7-9700.html
@@ -150,11 +169,13 @@ an older desktop, the '9700, a newer desktop, and the '4214, a server.
   \multicolumn{1}{c}{\textbf{'4214}} \\
   \toprule
   Intel Product Line &
-  Core &
-  Core &
+  Core i7 &
+  Core i7 &
   Xeon Silver \\
   Model &
   i7-3820 & i7-9700 & 4214 \\
+  Year &
+  2012 & 2019 & 2019 \\
   \midrule
   Total Threads & 8 & 8 & 48 \\
   Cores & 4 & 8 & 12 \\
@@ -162,7 +183,6 @@ an older desktop, the '9700, a newer desktop, and the '4214, a server.
   Sockets & 1 & 1 & 2 \\
   \midrule
   Frequency (GHz) & 3.6 & 3.0 & 2.2 \\
-  Released & 2012 & 2019 & 2019 \\
   Technology (nm) & 32 & 14 & 14 \\
   Socket & LGA2011 & LGA1151 & LGA3647 \\
   Single-thread Rating$^*$ & 1746 & 2774 & 1776 \\
@@ -190,7 +210,7 @@ While the older '3820 has the clock rate advantage, threads on the
 simultaneous multithreading (Intel's Hyperthreading, which runs
 multiple threads per core).  The '3820 was a higher-end chip than the
 '9700, but the '3820 is seven years older.  One key difference is the
-number of pins, which is driven by the number of external memory
+number of pins, which is primarily the number of external memory
 channels and hence bandwidth.
 
 The '4214 is a typical server: slow, but scales up.  It contains two
