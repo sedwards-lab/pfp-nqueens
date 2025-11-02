@@ -44,6 +44,7 @@ PROCESSED_RESULTS = \
 	zaphod4/pariset2-14.dat \
 	zaphod/pariset2-14.dat \
 	ford/pariset2-14.dat \
+	zaphod4/pariset2.tex \
 \
 	zaphod4/pariset2-14-A4M.stats.tex \
 	zaphod4/pariset2-14-A64M.stats.tex

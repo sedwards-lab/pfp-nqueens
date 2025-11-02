@@ -1,0 +1,14 @@
+92
+./nqueens-threaded 8 pariset2 +RTS -N8 0.01 6244
+352
+./nqueens-threaded 9 pariset2 +RTS -N8 0.01 10628
+724
+./nqueens-threaded 10 pariset2 +RTS -N8 0.01 22788
+2680
+./nqueens-threaded 11 pariset2 +RTS -N8 0.02 35004
+14200
+./nqueens-threaded 12 pariset2 +RTS -N8 0.03 38176
+73712
+./nqueens-threaded 13 pariset2 +RTS -N8 0.13 38680
+365596
+./nqueens-threaded 14 pariset2 +RTS -N8 0.68 39092

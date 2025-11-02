@@ -79,6 +79,7 @@ else
 			 seqiset-threaded.stats \
 			 pariset1-14 \
 			 pariset2-14 \
+			 pariset2 \
 			 pariset2-14-A4M.stats \
  			 pariset2-14-A64M.stats"
 	    ;;
@@ -202,6 +203,12 @@ pariset2-14-A64M.stats() {
     ./nqueens-threaded 14 pariset2 +RTS -N8 -A64M -s
 }
 
+pariset2() {
+    for n in $(seq 8 14)
+    do
+	eval $mytime ./nqueens-threaded $n pariset2 +RTS -N8
+    done
+}
 
 
 ######################################################################
