@@ -53,7 +53,8 @@
 
 \title{Parallel N-Queens in Haskell}
 
-\author{Stephen A. Edwards, Columbia University}
+\author{Stephen A. Edwards, Columbia University\\
+\url{https://github.com/sedwards-lab/pfp-nqueens}}
 
 \begin{document}
 
@@ -1062,30 +1063,91 @@ time to complete this.
 
 \section{Conclusion}
 
+I was happy with a $70\times$ speedup and about~97\% parallelizable on
+an 8-thread machine, so I stopped here.  The one final bit of code is
+the default case for the \emph{nqueens} function, which is faster than
+anything presented above, albeit with an incorrect result.
+
 \begin{code}
-nqueens _ _ = 0 -- Undefined mode
+nqueens _ _ = 0 -- Unknown mode
 \end{code}
 
+There are many more things that could be done.  Sequential
+optimization ideas include using \emph{Word64}s for the sets, which
+might be faster than even \emph{IntSet}.  Compiling with the
+\emph{-prof} flag to enable heap profiling could lead to still better
+data structures and a reduced memory footprint.  Keeping the memory
+footprint small is always a good idea because it makes better use of
+the caches and reduces the load on the garbage collector.
 
-FIXME: Consider vectors, using a Word64
+%FIXME: heap profiling:
+%FIXME: stack ghc -- -o nqueens-prof -O2 -Wall -rtsopts -threaded -prof -fprof-auto nqueens.lhs
+%FIXME: ./nqueens-prof 13 seqiset +RTS -hy -N1 -i0.025
+%FIXME: hp2ps -c nqueens-prof.hp
+%FIXME: About 40\% stack, 40\% ARR\_WORDS (unboxed vectors), and 20\% other stuff
 
-FIXME: heap profiling:
-FIXME: stack ghc -- -o nqueens-prof -O2 -Wall -rtsopts -threaded -prof -fprof-auto nqueens.lhs
-FIXME: ./nqueens-prof 13 seqiset +RTS -hy -N1 -i0.025
-FIXME: hp2ps -c nqueens-prof.hp
-FIXME: About 40\% stack, 40\% ARR\_WORDS (unboxed vectors), and 20\% other stuff
+On the '9700, increasing the nursery size actually slowed things down,
+but I did not test this on the other two machines.  There may be
+additional benefits to be had with different nursery sizes.
 
+While there was a serious load balancing issue when there were only~14
+parallel sparks, it seemed acceptable when I moved to~170 sparks.
+There might still be improvements to be had.
 
-FIXME: larger nursery on ford
+The current best implementation can make use of~20 threads, but it
+plateaus after that, even though it seems like it should be
+embarrassingly parallel.  It would be an interesting, if difficult,
+exercise to figure out why and further improve things.  For example,
+would generating more sparks improve the dynamic load balancing?
 
-FIXME: better quantitative analysis of load balancing
+% FIXME: larger nursery on ford
 
-FIXME: Heuristic to decide when to run sequential
+% FIXME: better quantitative analysis of load balancing
 
-FIXME: pariset3 to depth of 3
+%FIXME: Heuristic to decide when to run sequential
 
+%FIXME: pariset3 to depth of 3
 
-\newpage
+\section{Running experiments and producing graphs}
 
+It's always worth automating the process of running an experiment
+because you always need to run it multiple times.  Each graph and
+table of results in this report was generated with a two-stage process
+that
+
+\begin{enumerate}
+
+\item ran one of the \emph{nqueens} executables one or more times
+with different parameters, collecting the runtime and memory usage
+into a text \emph{.out} file; and
+
+\item processed the ``raw'' experimental data in the \emph{.out} file
+with one of four \emph{awk} scripts into a \emph{.tex} file containing a
+formatted table, or into a \emph{.dat} file plotted using the
+\LaTeX{} \emph{pgfplots} package.
+
+\end{enumerate}
+
+Running all the experiments is time-consuming and I rarely had access
+to all three machines simultaneously, so I wrote the \emph{nqueens}
+bash script to invoke them on command.  Running \emph{nqueens} either
+runs all the experiments for a particular host or runs some subset of
+them, useful during development.  Although the generated
+\emph{.out} files are generated automatically, they are costly to
+reproduce, so I checked them into the \emph{git} repository.
+
+Converting the raw experimental data to forms suitable for \LaTeX{},
+by contrast, is faster and often needed many times for the same
+experimental data while I was developing the document, so I gave this
+responsibility to the \emph{Makefile}.
+
+While this system worked, and the split between running the
+experiments ``manually'' and formatting them automatically worked
+well, adding a new table of results required adding consistent rules to
+the \emph{nqueens} script, the \emph{Makefile}, and the
+\emph{nqueens.lhs} source file.  In retrospect, I should have put
+something in the \emph{nqueens.lhs} file that would generate rules for
+the script and \emph{Makefile}, consolidating each experiment's
+specification in a single place.
 
 \end{document}
